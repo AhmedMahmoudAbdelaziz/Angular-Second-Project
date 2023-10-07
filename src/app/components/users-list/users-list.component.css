@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.title {
+    font-size: 35px;
+    font-style: italic;
+}
+.container {
+    margin-top: 130px;
+    margin-left: 50px;
+    max-width: 1600px;
+    overflow: auto;
+    min-height: 300px;
+    border: 1px solid #052338;
+    padding: 30px;
+    background-color: antiquewhite;
+}

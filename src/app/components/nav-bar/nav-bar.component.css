@@ -1,0 +1,12 @@
+.navbar-brand {
+    color: #FF9001;
+    font-size: 35px;
+    font-style: italic;
+}
+.nav-link {
+    font-size: 20px;
+    font-style: italic;
+}
+.navbar {
+    max-height: 80px;
+}

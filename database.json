@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Ahmed Mahmoud",
+      "email": "ahmed.mahmoud@gmail.com",
+      "phonenumber": "1235243710"
+    },
+    {
+      "id": 2,
+      "username": "Mohamed ahmed",
+      "email": "mohamed.ahmed@gmail.com",
+      "phonenumber": "1235246875"
+    },
+    {
+      "id": 3,
+      "username": "Yousef Hossam",
+      "email": "yousef.hosaam@gmail.com",
+      "phonenumber": "1236548790"
+    },
+    {
+      "id": 4,
+      "username": "Ziad Elsayed",
+      "email": "ziad.elsayed@gmail.com",
+      "phonenumber": "1032546781"
+    },
+    {
+      "id": 5,
+      "username": "Abdelaziz Ali",
+      "email": "abdelaziz.ali@gmail.com",
+      "phonenumber": "1124576320"
+    },
+    {
+      "id": 6,
+      "username": "Hassan Gaber",
+      "email": "hassan.gaber@gmail.com",
+      "phonenumber": "1154632987"
+    },
+    {
+      "id": 7,
+      "username": "Hassan Ahmed",
+      "email": "hassan.ahmed@gmail.com",
+      "phonenumber": "1234856924"
+    },
+    {
+      "id": 8,
+      "username": "Yousef Hisham",
+      "email": "yousef.hisham@gmail.com",
+      "phonenumber": "1023456210"
+    },
+    {
+      "id": 9,
+      "username": "zoz mani",
+      "email": "zoz.mani@gmail.com",
+      "phonenumber": "1231245362"
+    }
+  ]
+}

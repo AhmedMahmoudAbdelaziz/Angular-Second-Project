@@ -1,0 +1,66 @@
+<div class="container">
+    <header>
+      <h3 class="title">Users List</h3>
+      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add New User
+      </button>
+     </header>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">User Details</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <div class="mb-3">
+              <label for="username" class="form-label">UserName</label>
+              <input type="text" formControlName="username" class="form-control" id="username" placeholder="Add New UserName">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Add Email">
+            </div>
+            <div class="mb-3">
+              <label for="phonenumber" class="form-label">PhoneNumber</label>
+              <input type="text" formControlName="phonenumber" class="form-control" id="phonenumber" placeholder="Add PhoneNumber">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" (click)="adduser()">Add User</button>
+          <button type="button" class="btn btn-primary" (click)="updateuser()">Update User</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <table datatable [dtOptions]="dtoptions"  [dtTrigger]="dtTrigger"  class="table table-hover">
+      <thead>
+           <tr class="table-dark">
+               <th scope="col">Id</th>
+               <th scope="col">UserName</th>
+               <th scope="col">Email</th>
+               <th scope="col">PhoneNumber</th>
+               <th scope="col">Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let user of users" class="table-success">
+              <th scope="row">{{user.id}}</th>
+              <td>{{user.username}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.phonenumber}}</td>
+              <td style="width: 30%">
+              <a class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="EditUser(user)">Edit</a> -
+              <a class="btn btn-danger" (click)="DeleteUser(user)">Delete</a>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+  </div>
+  
+  
